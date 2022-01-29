@@ -1,0 +1,24 @@
+@import "./mixins.scss";
+.article-right-items {
+    .row {
+        .article-section-title {
+            @include sectionTitle;
+            margin-bottom: 25px;
+        }
+        .article-post-img {
+            .filter {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                transition: .2s ease all;
+                cursor: pointer;
+            }
+            .filter:hover {
+                transition: .2s ease all;
+                background-color: rgba(53, 53, 53, 0.137);
+            }
+        }
+    }
+}

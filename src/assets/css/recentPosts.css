@@ -1,0 +1,24 @@
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #212631;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.recent-post-items .filter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+  cursor: pointer;
+}
+
+.recent-post-items .filter:hover {
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+  background-color: rgba(53, 53, 53, 0.137);
+}

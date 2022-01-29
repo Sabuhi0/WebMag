@@ -1,0 +1,65 @@
+@import "./mixins.scss";
+.most-read-left-items {
+    max-width: 780px;
+    .most-read-button {
+        button {
+            padding: 9px 45px;
+            border: none;
+            background-color: #212631;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+            color: #fff;
+            -webkit-transition: .2s opacity;
+            transition: .2s opacity;
+        }
+    }
+}
+.post-content {
+    margin-left: 30px;
+    .post-meta {
+        margin-top: 0px !important;
+    }
+}
+
+// Aside
+
+.aside-most-read-items {
+    width: 360px;
+    padding-left: 15px;
+    .aside-most-read-catagories {
+        .aside-category-widget {
+            ul {
+                li:not(:first-child) {
+                    margin-top: 10px;
+                }
+                li {
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #eceef2;
+                    a {
+                        span {
+                            float: right;
+                            padding: 0 5px;
+                            color: #fff;
+                            font-weight: 600;
+                            border-radius: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .aside-tags-widget {
+        ul {
+            li {
+                color: #fff;
+                background-color: #212631;
+                padding: 3px 10px;
+                font-weight: 600;
+                border-radius: 2px;
+                -webkit-transition: .2s opacity;
+                transition: .2s opacity;
+            }
+        }
+    }
+}

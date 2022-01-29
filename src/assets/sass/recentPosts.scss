@@ -1,0 +1,21 @@
+@import "./mixins.scss";
+.section-title {
+    @include sectionTitle;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+.recent-post-items {
+    .filter {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        transition: .2s ease all;
+        cursor: pointer;
+    }
+    .filter:hover {
+        transition: .2s ease all;
+        background-color: rgba(53, 53, 53, 0.137);
+    }
+}

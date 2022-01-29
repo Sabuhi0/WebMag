@@ -1,0 +1,842 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Scss -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Tailwind Output Css -->
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    
+    <header id="header">
+        <div class="header-items">
+            <div class="container flex items-center justify-between relative">
+                <div class="flex items-center">
+                    <div class="header-logo">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAASCAMAAACw93oVAAAAM1BMVEUAAAD///8oLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEhrMZpoAAAAEHRSTlMAABEiM0RVZneImaq7zN3uf6QJ9gAAAhVJREFUSMeFlUGC4yAMBDsGYsAE6v+v3QNCJrvjWU5xsFXqRhIaBNmKfNZPFYqU8TUkjfXQsiQpwf2xjgFpPZxA1LZyBeg5vl5q5BtzR+gkKdOLrSxpcJVSCkBbyHoHZUP2ry29PVta1HlL6zg+0SXlTbakwdsidIohPcnAhkzsWzrZVpDc2cRwRKH8gtRJX4GXlrojG3DnHwFqkBQr10u61lYh94XvxN+QAY6lJd4iFzICHxjHnYDj40u3s51QyZuvz8jIcPvaLXIhK/TDORG2OK+X3NlEU7K9Mt9+RBYuR5JcpCEDkFWZeStvIg1p0gqnZM5OX5+QR6UHQ44ps0J3ZAEOJeCUpAs8V0O+pzd9HEveErv1Zd77kiusupytEYBzIY8xi+pjpre1Mb/tWs4mmsPM170v492Xn70v0wVNFVpYkVeDrhx+QlayVKcLneD2Pp7l0Sw/SEtgcGS3allq3dgN+aZJfRglu6/P5aNBNKTValXYxH01/l4+XlOdkLh8zi5ff0E28kIGC72Qny9kmU3S/0ZWcl3hPgQfCM/I60YqzxlkyPRFZBxfo8CRiWa+Splm3f0bsq/oSToGIziybcM1TVYEuKI1TPeBXrfxnP+HbD5j/e4wZAA7omkZ/e/j7X5tvbfXgiN/urwqMOIDsn79d9o4SP0fZPLzlbL7+nhF93LoZ2TYSsX6ZD6eZc6QnF5/AMoDM/cBQX3IAAAAAElFTkSuQmCC"
+                            alt="">
+                    </div>
+                    <nav>
+                        <ul class="flex">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Popular</a></li>
+                            <li class="border-b-4 border-b-[#4bb92f] hover:text-[#4bb92f] transition-all"><a
+                                    href="#">Web Design</a></li>
+                            <li class="border-b-4 border-b-[#ff8700] hover:text-[#ff8700] transition-all"><a
+                                    href="#">JavaScript</a></li>
+                            <li class="border-b-4 border-b-[#0078ff] hover:text-[#0078ff] transition-all"><a
+                                    href="#">Css</a></li>
+                            <li class="border-b-4 border-b-[#8d00ff] hover:text-[#8d00ff] transition-all"><a
+                                    href="#">Jquery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-btns">
+                    <button class="aside-btn pr-10">
+                        <i class="fa fa-bars text-[#212631]"></i>
+                    </button>
+                    <button class="search-btn">
+                        <i class="fa fa-search text-[#212631]"></i>
+                    </button>
+                    <div class="header-search-form">
+                        <input class="search-input" type="text" name="search" placeholder="Enter Your Search ...">
+                        <button class="search-close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Aside Section Start -->
+            <aside id="nav-aside">
+                <div class="aside-items">
+                    <div class="row mb-10">
+                        <ul class="nav-aside-menu">
+                            <li><a href="#" class="text-2xl font-black text-[##212631] hover:underline">Home</a></li>
+                            <li><a href="#" class="text-2xl font-black text-[##212631] hover:underline">About Us</a>
+                            </li>
+                            <li><a href="#" class="text-2xl font-black text-[##212631] hover:underline">Join Us</a></li>
+                            <li><a href="#"
+                                    class="text-2xl font-black text-[##212631] hover:underline">Advertisement</a></li>
+                            <li><a href="#" class="text-2xl font-black text-[##212631] hover:underline">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mb-10">
+                        <h3 class="text-2xl font-bold text-[#212631] mb-4">Recent Posts</h3>
+                        <div class="post-items mb-10">
+                            <div class="post-img">
+                                <a href="#">
+                                    <img src="./assets/images/post-1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="post-title cursor-pointer">
+                                <h3 class="text-lg font-bold text-[#212631] hover:underline leading-none">
+                                    <a href="#">Why Node.js Is The Coolest Kid On The Backend Development Block!</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="post-items mb-10">
+                            <div class="post-img">
+                                <a href="#">
+                                    <img src="./assets/images/post-2.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="post-title cursor-pointer">
+                                <h3 class="text-lg font-bold text-[#212631] hover:underline leading-none">
+                                    <a href="#">Why Node.js Is The Coolest Kid On The Backend Development Block!</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="post-items mb-10">
+                            <div class="post-img">
+                                <a href="#">
+                                    <img src="./assets/images/post-1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="post-title cursor-pointer">
+                                <h3 class="text-lg font-bold text-[#212631] hover:underline leading-none">
+                                    <a href="#">Why Node.js Is The Coolest Kid On The Backend Development Block!</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-10">
+                        <h3 class="text-2xl font-bold text-[#212631] mb-4">Follow us</h3>
+                        <ul class="aside-socials flex gap-1">
+                            <li class="hover:opacity-90 transition-all">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="hover:opacity-90 transition-all">
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="hover:opacity-90 transition-all">
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="hover:opacity-90 transition-all">
+                                <a href="#">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="nav-aside-close">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </aside>
+            <!-- Aside Section End -->
+        </div>
+    </header>
+
+    <!-- Header Section End -->
+
+    <!-- Intro Post Section Start -->
+
+    <main id="intro-post">
+        <div class="container">
+            <div class="intro-post-items grid gap-8 grid-cols-1 md:grid-cols-2 mt-10">
+                <div class="intro-post-item relative">
+                    <div class="post-img">
+                        <a href="#">
+                            <img src="./assets/images/post-3.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="filter"></div>
+                    <div class="post-thumb">
+                        <div class="post-meta">
+                            <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                            <span>March 27, 2018</span>
+                        </div>
+                        <h3 class="post-title hover:underline">
+                            <a href="#">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="intro-post-item relative">
+                    <div class="post-img">
+                        <a href="#">
+                            <img src="./assets/images/post-4.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="filter"></div>
+                    <div class="post-thumb">
+                        <div class="post-meta">
+                            <a href="#" class="bg-[#8d00ff]">JQuery</a>
+                            <span>March 27, 2018</span>
+                        </div>
+                        <h3 class="post-title hover:underline">
+                            <a href="#">Ask HN: Does Anybody Still Use JQuery?</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Intro Post Section End -->
+
+    <!-- Recent Posts Section Start -->
+
+    <section id="recent">
+        <div class="container">
+            <div class="section-title">
+                <h2>Recent Posts</h2>
+            </div>
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+                <div class="recent-post-items">
+                    <div class="post-img relative">
+                        <a href="#">
+                            <img src="./assets/images/xpost-3.webp" alt="">
+                        </a>
+                        <div class="filter"></div>
+                    </div>
+                    <div class="post-meta">
+                        <a href="#" class="bg-[#4bb92f]">Web Design</a>
+                        <span>March 27, 2018</span>
+                    </div>
+                    <h3 class="post-title hover:underline">
+                        <a href="#">
+                            Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically
+                        </a>
+                    </h3>
+                </div>
+                <div class="recent-post-items">
+                    <div class="post-img relative">
+                        <a href="#">
+                            <img src="./assets/images/xpost-4.webp" alt="">
+                        </a>
+                        <div class="filter"></div>
+                    </div>
+                    <div class="post-meta">
+                        <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                        <span>March 27, 2018</span>
+                    </div>
+                    <h3 class="post-title hover:underline">
+                        <a href="#">
+                            Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks
+                        </a>
+                    </h3>
+                </div>
+                <div class="recent-post-items">
+                    <div class="post-img relative">
+                        <a href="#">
+                            <img src="./assets/images/xpost-5.webp" alt="">
+                        </a>
+                        <div class="filter"></div>
+                    </div>
+                    <div class="post-meta">
+                        <a href="#" class="bg-[#8d00ff]">JQuery</a>
+                        <span>March 27, 2018</span>
+                    </div>
+                    <h3 class="post-title hover:underline">
+                        <a href="#">
+                            Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks
+                        </a>
+                    </h3>
+                </div>
+                <div class="recent-post-items">
+                    <div class="post-img relative">
+                        <a href="#">
+                            <img src="./assets/images/xpost-3.webp" alt="">
+                        </a>
+                        <div class="filter"></div>
+                    </div>
+                    <div class="post-meta">
+                        <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                        <span>March 27, 2018</span>
+                    </div>
+                    <h3 class="post-title hover:underline">
+                        <a href="#">
+                            Why Node.js Is The Coolest Kid On The Backend Development Block!
+                        </a>
+                    </h3>
+                </div>
+                <div class="recent-post-items">
+                    <div class="post-img relative">
+                        <a href="#">
+                            <img src="./assets/images/xpost-4.webp" alt="">
+                        </a>
+                        <div class="filter"></div>
+                    </div>
+                    <div class="post-meta">
+                        <a href="#" class="bg-[#0078ff]">Css</a>
+                        <span>March 27, 2018</span>
+                    </div>
+                    <h3 class="post-title hover:underline">
+                        <a href="#">
+                            CSS Float: A Tutorial
+                        </a>
+                    </h3>
+                </div>
+                <div class="recent-post-items">
+                    <div class="post-img relative">
+                        <a href="#">
+                            <img src="./assets/images/xpost-5.webp" alt="">
+                        </a>
+                        <div class="filter"></div>
+                    </div>
+                    <div class="post-meta">
+                        <a href="#" class="bg-[#4bb92f]">Web Design</a>
+                        <span>March 27, 2018</span>
+                    </div>
+                    <h3 class="post-title hover:underline">
+                        <a href="#">
+                            Tell-A-Tool: Guide To Web Design And Development Tools
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section Start -->
+
+    <!-- Article Post Section Start -->
+
+    <article id="article">
+        <div class="container">
+            <div class="row flex gap-10 mt-10">
+                <div class="article-left-items">
+                    <div class="row">
+                        <div class="intro-post-item relative mb-10">
+                            <div class="post-img relative w-[763px]">
+                                <a href="#">
+                                    <img class="w-full" src="./assets/images/post-4.webp" alt="">
+                                </a>
+                                <div class="filter"></div>
+                            </div>
+                            <div class="post-thumb">
+                                <div class="post-meta">
+                                    <a href="#" class="bg-[#8d00ff]">JQuery</a>
+                                    <span>March 27, 2018</span>
+                                </div>
+                                <h3 class="post-title hover:underline">
+                                    <a href="#">Ask HN: Does Anybody Still Use JQuery?</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 w-[763px]">
+                            <div class="recent-post-items">
+                                <div class="post-img relative">
+                                    <a href="#">
+                                        <img class="w-full" src="./assets/images/post-3.webp" alt="">
+                                    </a>
+                                    <div class="filter"></div>
+                                </div>
+                                <div class="post-meta">
+                                    <a href="#" class="bg-[#0078ff]">Css</a>
+                                    <span>March 27, 2018</span>
+                                </div>
+                                <h3 class="post-title hover:underline">
+                                    <a href="#">
+                                        CSS Float: A Tutorial
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="recent-post-items">
+                                <div class="post-img relative">
+                                    <a href="#">
+                                        <img class="w-full" src="./assets/images/post-4.webp" alt="">
+                                    </a>
+                                    <div class="filter"></div>
+                                </div>
+                                <div class="post-meta">
+                                    <a href="#" class="bg-[#4bb92f]">Web Design</a>
+                                    <span>March 27, 2018</span>
+                                </div>
+                                <h3 class="post-title hover:underline">
+                                    <a href="#">
+                                        Tell-A-Tool: Guide To Web Design And Development Tools
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="recent-post-items">
+                                <div class="post-img relative">
+                                    <a href="#">
+                                        <img class="w-full" src="./assets/images/xpost-4.webp" alt="">
+                                    </a>
+                                    <div class="filter"></div>
+                                </div>
+                                <div class="post-meta">
+                                    <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                                    <span>March 27, 2018</span>
+                                </div>
+                                <h3 class="post-title hover:underline">
+                                    <a href="#">
+                                        Why Node.js Is The Coolest Kid On The Backend Development Block!
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="recent-post-items">
+                                <div class="post-img relative">
+                                    <a href="#">
+                                        <img class="w-full" src="./assets/images/xpost-5.webp" alt="">
+                                    </a>
+                                    <div class="filter"></div>
+                                </div>
+                                <div class="post-meta">
+                                    <a href="#" class="bg-[#8d00ff]">JQuery</a>
+                                    <span>March 27, 2018</span>
+                                </div>
+                                <h3 class="post-title hover:underline">
+                                    <a href="#">
+                                        Ask HN: Does Anybody Still Use JQuery?
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="recent-post-items">
+                                <div class="post-img relative">
+                                    <a href="#">
+                                        <img class="w-full" src="./assets/images/xpost-3.webp" alt="">
+                                    </a>
+                                    <div class="filter"></div>
+                                </div>
+                                <div class="post-meta">
+                                    <a href="#" class="bg-[#4bb92f]">Web Design</a>
+                                    <span>March 27, 2018</span>
+                                </div>
+                                <h3 class="post-title hover:underline">
+                                    <a href="#">
+                                        Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="recent-post-items">
+                                <div class="post-img relative">
+                                    <a href="#">
+                                        <img class="w-full" src="./assets/images/xpost-4.webp" alt="">
+                                    </a>
+                                    <div class="filter"></div>
+                                </div>
+                                <div class="post-meta">
+                                    <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                                    <span>March 27, 2018</span>
+                                </div>
+                                <h3 class="post-title hover:underline">
+                                    <a href="#">
+                                        Why Node.js Is The Coolest Kid On The Backend Development Block!
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-right-items">
+                    <div class="row">
+                        <div class="article-section-title">
+                            <h2>Most Read</h2>
+                        </div>
+                        <div class="row">
+                            <div class="article-thumb-post">
+                                <div class="article-thumb-post-item mb-8 flex gap-4">
+                                    <div class="article-post-img relative">
+                                        <a href="#">
+                                            <img class="max-w-[90px]" src="./assets/images/post-2.webp" alt="">
+                                        </a>
+                                        <div class="filter"></div>
+                                    </div>
+                                    <div class="article-post-title cursor-pointer">
+                                        <h3 class="text-lg font-bold text-[#212631] hover:underline leading-none">
+                                            <a href="#">Why Node.js Is The Coolest Kid On The Backend Development Block!</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="article-thumb-post-item mb-8 flex gap-4">
+                                    <div class="article-post-img relative">
+                                        <a href="#">
+                                            <img class="max-w-[90px]" src="./assets/images/post-1.webp" alt="">
+                                        </a>
+                                        <div class="filter"></div>
+                                    </div>
+                                    <div class="article-post-title cursor-pointer">
+                                        <h3 class="text-lg font-bold text-[#212631] hover:underline leading-none">
+                                            <a href="#">Why Node.js Is The Coolest Kid On The Backend Development Block!</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="article-thumb-post-item mb-8 flex gap-4">
+                                    <div class="article-post-img relative">
+                                        <a href="#">
+                                            <img class="max-w-[90px]" src="./assets/images/post-2.webp" alt="">
+                                        </a>
+                                        <div class="filter"></div>
+                                    </div>
+                                    <div class="article-post-title cursor-pointer">
+                                        <h3 class="text-lg font-bold text-[#212631] hover:underline leading-none">
+                                            <a href="#">Why Node.js Is The Coolest Kid On The Backend Development Block!</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="article-thumb-post-item mb-8 flex gap-4">
+                                    <div class="article-post-img relative">
+                                        <a href="#">
+                                            <img class="max-w-[90px]" src="./assets/images/post-1.webp" alt="">
+                                        </a>
+                                        <div class="filter"></div>
+                                    </div>
+                                    <div class="article-post-title cursor-pointer">
+                                        <h3 class="text-lg font-bold text-[#212631] hover:underline leading-none">
+                                            <a href="#">Why Node.js Is The Coolest Kid On The Backend Development Block!</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-featured-post">
+                                <div class="article-section-title">
+                                    <h2>Featured Posts</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="intro-post-item relative">
+                                        <div class="post-img relative">
+                                            <a href="#">
+                                                <img class="w-full" src="./assets/images/post-4.webp" alt="">
+                                            </a>
+                                            <div class="filter"></div>
+                                        </div>
+                                        <div class="post-thumb">
+                                            <div class="post-meta">
+                                                <a href="#" class="bg-[#8d00ff]">JQuery</a>
+                                                <span>March 27, 2018</span>
+                                            </div>
+                                            <h3 class="post-title hover:underline">
+                                                <a href="#">Ask HN: Does Anybody Still Use JQuery?</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="intro-post-item relative mt-10 mb-10">
+                                        <div class="post-img relative">
+                                            <a href="#">
+                                                <img class="w-full" src="./assets/images/post-3.webp" alt="">
+                                            </a>
+                                            <div class="filter"></div>
+                                        </div>
+                                        <div class="post-thumb">
+                                            <div class="post-meta">
+                                                <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                                                <span>March 27, 2018</span>
+                                            </div>
+                                            <h3 class="post-title hover:underline">
+                                                <a href="#">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="aside-wdget flex justify-center">
+                                        <a href="#">
+                                            <img src="./assets/images/sample.webp" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Article Post Section End -->
+
+    <!-- Post Grey Section Start -->
+
+    <section id="post-grey">
+        <div class="post-grey mt-10">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <h2>Featured Posts</h2>
+                    </div>
+                    <div class="grid gap-8 grid-cols-1 md:grid-cols-3"> <div class="recent-post-items">
+                        <div class="post-img relative">
+                            <a href="#">
+                                <img src="./assets/images/xpost-4.webp" alt="">
+                            </a>
+                            <div class="filter"></div>
+                        </div>
+                        <div class="post-meta">
+                            <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                            <span>March 27, 2018</span>
+                        </div>
+                        <h3 class="post-title hover:underline">
+                            <a href="#">
+                                Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="recent-post-items">
+                        <div class="post-img relative">
+                            <a href="#">
+                                <img src="./assets/images/xpost-5.webp" alt="">
+                            </a>
+                            <div class="filter"></div>
+                        </div>
+                        <div class="post-meta">
+                            <a href="#" class="bg-[#8d00ff]">JQuery</a>
+                            <span>March 27, 2018</span>
+                        </div>
+                        <h3 class="post-title hover:underline">
+                            <a href="#">
+                                Ask HN: Does Anybody Still Use JQuery?
+                            </a>
+                        </h3>
+                    </div>
+                        <div class="recent-post-items">
+                            <div class="post-img relative">
+                                <a href="#">
+                                    <img src="./assets/images/xpost-3.webp" alt="">
+                                </a>
+                                <div class="filter"></div>
+                            </div>
+                            <div class="post-meta">
+                                <a href="#" class="bg-[#4bb92f]">Web Design</a>
+                                <span>March 27, 2018</span>
+                            </div>
+                            <h3 class="post-title hover:underline">
+                                <a href="#">
+                                    Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Grey Section End -->
+
+    <!-- Most Read Section Start -->
+
+    <section id="most-read">
+        <div class="container">
+            <div class="section-title">
+                <h2>Most Read</h2>
+            </div>
+            <div class="row flex">
+                <div class="most-read-left-items">
+                    <div class="recent-post-items mb-10 flex">
+                        <div class="post-img relative">
+                            <img src="./assets/images/xpost-4.webp" alt="">
+                            <div class="filter"></div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                                <span>March 27, 2018</span>
+                            </div>
+                            <h3 class="post-title mb-4 hover:underline">
+                                <a href="#">
+                                    Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks
+                                </a>
+                            </h3>
+                            <p class="post-dec">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="recent-post-items mb-10 flex">
+                        <div class="post-img relative">
+                            <img src="./assets/images/xpost-4.webp" alt="">
+                            <div class="filter"></div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                                <span>March 27, 2018</span>
+                            </div>
+                            <h3 class="post-title mb-4 hover:underline">
+                                <a href="#">
+                                    Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks
+                                </a>
+                            </h3>
+                            <p class="post-dec">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="recent-post-items mb-10 flex">
+                        <div class="post-img relative">
+                            <img src="./assets/images/xpost-4.webp" alt="">
+                            <div class="filter"></div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                                <span>March 27, 2018</span>
+                            </div>
+                            <h3 class="post-title mb-4 hover:underline">
+                                <a href="#">
+                                    Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks
+                                </a>
+                            </h3>
+                            <p class="post-dec">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="recent-post-items flex">
+                        <div class="post-img relative">
+                            <img src="./assets/images/xpost-4.webp" alt="">
+                            <div class="filter"></div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <a href="#" class="bg-[#ff8700]">JavaScript</a>
+                                <span>March 27, 2018</span>
+                            </div>
+                            <h3 class="post-title mb-4 hover:underline">
+                                <a href="#">
+                                    Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks
+                                </a>
+                            </h3>
+                            <p class="post-dec">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="most-read-button text-center mt-10 mb-20">
+                        <button class="hover:opacity-90">Load More</button>
+                    </div>
+                </div>
+                <div class="aside-most-read-items">
+                    <div class="aside-wdget flex justify-center">
+                        <a href="#">
+                            <img src="./assets/images/sample.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="aside-most-read-catagories">
+                        <div class="section-title">
+                            <h2>Catagories</h2>
+                        </div>
+                        <div class="aside-category-widget mb-10">
+                            <ul>
+                                <li class="hover:text-[#4bb92f] transition-all cursor-pointer"><a href="#">Web Design <span class="bg-[#4bb92f]">340</span></a></li>
+                                <li class="hover:text-[#4bb92f] transition-all cursor-pointer"><a href="#">Web Design <span class="bg-[#4bb92f]">340</span></a></li>
+                                <li class="hover:text-[#4bb92f] transition-all cursor-pointer"><a href="#">Web Design <span class="bg-[#4bb92f]">340</span></a></li>
+                                <li class="hover:text-[#4bb92f] transition-all cursor-pointer"><a href="#">Web Design <span class="bg-[#4bb92f]">340</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="aside-tags-widget">
+                            <ul class="inline-grid grid-cols-3 gap-1">
+                                <li class=""><a href="#">Chrome</a></li>
+                                <li class=""><a href="#">Chrome</a></li>
+                                <li class=""><a href="#">Chrome</a></li>
+                                <li class=""><a href="#">Chrome</a></li>
+                                <li class=""><a href="#">Chrome</a></li>
+                                <li class=""><a href="#">Chrome</a></li>
+                                <li class=""><a href="#">Chrome</a></li>
+                                <li class=""><a href="#">Chrome</a></li>
+                                <li class=""><a href="#">Chrome</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Read Section End -->
+
+    <!-- Footer Section Start -->
+
+    <footer id="footer">
+        <div class="container border-t border-[#f4f4f9]">
+            <div class="row mt-20 flex justify-between">
+                <div class="footer-widget">
+                    <div class="footer-logo mb-10">
+                        <a href="#"> <img src="./assets/images/webmag.webp"
+                            alt=""></a>
+                    </div>
+                    <div class="footer-nav">
+                        <ul>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Advertisement</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-copyright mt-5">
+                        <span>© Copyright © 2022 All rights reserved | This template is made with<i class="far fa-heart"></i> by <a href="#">Colorlib</a></span>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="footer-lists w-[165px]">
+                        <h3 class="footer-title mb-10">About Us</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Join Us</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-lists w-[165px]">
+                        <h3 class="footer-title mb-10">Catagories</h3>
+                        <ul>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">Css</a></li>
+                            <li><a href="#">Jquery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contact w-[262px]">
+                    <h3 class="footer-title mb-10">Join Our Newsletter</h3>
+                    <div class="footer-input">
+                        <form action="#">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">
+                                <i class="fa fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="footer-socials">
+                        <ul class="flex gap-2 mt-5">
+                            <li class="hover:opacity-90 transition-all">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="hover:opacity-90 transition-all">
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="hover:opacity-90 transition-all">
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="hover:opacity-90 transition-all">
+                                <a href="#">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Section End -->
+
+    <!-- Js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

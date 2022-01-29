@@ -1,0 +1,26 @@
+@import "./varibales.scss";
+@import "./mixins.scss";
+body {
+    font-family: $Font;
+}
+.container {
+    max-width: 1170px !important;
+    margin: 0 auto !important;
+}
+
+.post-meta {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    a {
+        @include postButton;
+    }
+    span {
+        @include postDate;
+        color: #212631;
+    }
+}
+.post-title {
+    @include RecentPostsTitle;
+    color: #212631;
+    line-height: 1;
+}

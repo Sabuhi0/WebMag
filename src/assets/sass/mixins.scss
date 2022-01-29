@@ -1,0 +1,32 @@
+@mixin postButton {
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    font-weight: 600;
+    border-radius: 2px;
+    margin-right: 15px;
+    color: #fff;
+    -webkit-transition: .2s opacity;
+    transition: .2s opacity;
+}
+
+@mixin postDate {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@mixin postTitle {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+@mixin RecentPostsTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@mixin sectionTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #212631;
+}
