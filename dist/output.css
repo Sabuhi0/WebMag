@@ -502,6 +502,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
@@ -663,21 +667,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 120 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#000\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#d60000\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(214 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#c26d6d\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(194 109 109 / var(--tw-bg-opacity));
-}
-
 .pr-10 {
   padding-right: 2.5rem;
 }
@@ -753,6 +742,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

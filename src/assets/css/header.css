@@ -3,6 +3,35 @@
   border-bottom: 1px solid #eceef2;
 }
 
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  display: block;
+  -webkit-transition: top 0.3s all ease;
+  transition: top 0.3s all ease;
+  background-color: #fff;
+  -webkit-box-shadow: 0 -1px 0 0 #eceef2 inset;
+  box-shadow: 0 -1px 0 0 #eceef2 inset;
+  -webkit-animation: nav_anim .6s forwards;
+          animation: nav_anim .6s forwards;
+}
+
+@-webkit-keyframes nav_anim {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes nav_anim {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
 .header-logo {
   padding-top: 25px;
   padding-bottom: 25px;

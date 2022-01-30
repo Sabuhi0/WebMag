@@ -24,6 +24,12 @@
 
 // Aside
 
+@media (max-width: 768px) {
+    .aside-most-read-items {
+        width: 100% !important;
+    }
+}
+
 .aside-most-read-items {
     width: 360px;
     padding-left: 15px;
