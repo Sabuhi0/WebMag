@@ -3,6 +3,14 @@
 body {
     font-family: $Font;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 .container {
     max-width: 1170px !important;
     margin: 0 auto !important;
@@ -19,6 +27,7 @@ body {
         color: #212631;
     }
 }
+
 .post-title {
     @include RecentPostsTitle;
     color: #212631;

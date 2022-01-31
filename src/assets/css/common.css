@@ -3,6 +3,13 @@ body {
   font-family: "Nunito";
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .container {
   max-width: 1170px !important;
   margin: 0 auto !important;
