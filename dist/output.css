@@ -721,6 +721,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.9;
 }
 
+@media (min-width: 640px) {
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
